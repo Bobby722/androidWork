@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements OnInitListener {
                     tts.speak(joke[num], TextToSpeech.QUEUE_FLUSH, null);     //發音
                     break;
                 case "猜我幾歲":
-
+                    startActivity(new Intent(this, DetectFaceActivity.class));
                     break;
                 case "我在哪裡":
                     Intent intent = new Intent();
