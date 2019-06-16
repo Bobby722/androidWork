@@ -63,7 +63,9 @@ public class MainActivity extends AppCompatActivity implements OnInitListener {
 
                     break;
                 case "我在哪裡":
-
+                    Intent intent = new Intent();
+                    intent.setClass(MainActivity.this,MapsActivity.class);
+                    startActivity(intent);
                     break;
                 case "你是誰":
                     tts.speak("我是你的個人助理，pepper!", TextToSpeech.QUEUE_FLUSH, null);     //發音
